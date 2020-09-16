@@ -236,8 +236,8 @@ public class BaseJpaRestfulServer extends RestfulServer {
      * so it is a potential security vulnerability. Consider using an AuthorizationInterceptor
      * with this feature.
      */
-    if (false) { // <-- DISABLED RIGHT NOW
-      //registerProvider(appCtx.getBean(TerminologyUploaderProvider.class));
+    if (true) { // <-- DISABLED RIGHT NOW
+      registerProvider(appCtx.getBean(TerminologyUploaderProvider.class));
     }
 
     // If you want to enable the $trigger-subscription operation to allow
